@@ -143,6 +143,12 @@ public class GameManager : NetworkBehaviour
         {
             player.transform.position = new Vector3(-47, 132, 0);
         }
+        if (SenceNumber == 3)
+        {
+            player.transform.position = new Vector3(-65, 38, 0);
+            gameOver = true;
+
+        }
         //NetworkManager.singleton.ServerChangeScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

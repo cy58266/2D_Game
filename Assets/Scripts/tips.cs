@@ -13,11 +13,13 @@ public class tips : MonoBehaviour
 
     public void Open()
     {
+        flags = 0;
         introduce.SetActive(true);
     }
 
     public void Close()
     {
+        information.transform.GetChild(flags-1).gameObject.SetActive(false);
         introduce.SetActive(false);
     }
 
